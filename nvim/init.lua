@@ -1,3 +1,11 @@
+-- packages, or something?
+
+-- setting up / installing lazy.nvim
+-- source: https://lazy.folke.io/installation
+require("config.lazy")
+
+-- my other settings
+
 local opt = vim.opt
 
 -- from:
