@@ -18,3 +18,6 @@ export PATH
 PATH="${PATH}:/Applications/nvim-macos-x86_64/bin"
 export PATH
 
+# after installing Homebrew
+eval "$(/usr/local/bin/brew shellenv)"
+
