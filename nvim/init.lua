@@ -24,7 +24,7 @@ opt.expandtab = true
 
 -- more:
 
--- absolute line numbers
+-- absolute and relative line numbers
 opt.number = true
--- relative: opt.relativenumber
+opt.relativenumber = true
 
