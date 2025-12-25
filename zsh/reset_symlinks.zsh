@@ -6,6 +6,10 @@
 # Reset zsh symlinks
 # by removing then relinking
 
+# Note: the use of absolute rather than relative paths is intentional,
+# for relinking usually doesn't work properly (recreating the problem) if
+# relative paths are used instead
+
 # .zprofile
 rm ~/.zprofile
 ln -s ~/Documents/All\ My\ Files/Work,\ Portfolio,\ Personal\ Branding/Configurations/dotfiles/zsh/.zprofile ~/.zprofile
