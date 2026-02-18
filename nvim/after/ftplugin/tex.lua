@@ -1,3 +1,6 @@
+-- tex.lua is for .tex (TeX/LaTeX) files
+-- not to be confused with text.lua for .txt (text) files
+
 local opt = vim.opt_local
 
 -- word wrap
