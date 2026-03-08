@@ -4,6 +4,9 @@
 -- source: https://lazy.folke.io/installation
 require("config.lazy")
 
+-- nvim-lspconfig
+vim.lsp.enable("pyright") -- Python
+
 -- my other settings
 
 local opt = vim.opt
