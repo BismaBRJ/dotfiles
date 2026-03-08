@@ -5,7 +5,16 @@
 require("config.lazy")
 
 -- nvim-lspconfig
-vim.lsp.enable("pyright") -- Python
+vim.lsp.enable("pyright")
+
+-- old syntax:
+--[[
+-- nvim-lspconfig
+local lspconfig = require("lspconfig")
+
+-- Python LSP: Pyright
+lspconfig.pyright.setup({})
+]]
 
 -- my other settings
 
