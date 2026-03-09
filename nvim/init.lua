@@ -5,20 +5,12 @@
 require("config.lazy")
 
 -- nvim-lspconfig
-
--- Python LSP: Pyright
-vim.lsp.enable("pyright")
-
--- Haskell LSP: Haskell Language Server (HLS)
-vim.lsp.config["hls"] = {
-    settings = {
-        haskell = {
-            cabalFormattingProvider = "none", -- default: cabal-fmt
-            formattingProvider = "none" -- default: ormolu
-        }
-    }
-}
-vim.lsp.enable("hls")
+-- any overrides are under after/lsp/
+vim.lsp.enable({
+    "pyright", -- Python LSP: Pyright
+    "hls", -- Haskell LSP: Haskell Language Server (HLS)
+    -- trailing comma, tee-hee
+})
 
 -- old syntax:
 --[[
