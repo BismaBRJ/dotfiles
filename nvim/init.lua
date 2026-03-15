@@ -42,15 +42,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
--- initialization for plugin: quarto-nvim
--- adapted from https://github.com/quarto-dev/quarto-nvim
-local quarto = require("quarto")
-quarto.setup()
-vim.keymap.set(
-    'n', "<leader>qp", quarto.quartoPreview,
-    { silent = true, noremap = true }
-)
-
 -- my other settings
 
 local opt = vim.opt
