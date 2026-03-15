@@ -8,7 +8,9 @@ If it may interest you: so far, I intend to use neovim with somewhat-minimal con
 
 - `lazy.nvim` to easily manage plugins;
 
-- VimTeX to use LaTeX, which apparently comes with some default keybindings; and
+- VimTeX to use LaTeX, which apparently comes with some default keybindings;
 
-- `nvim-lspconfig` to easily configure my use of LSPs with Neovim, which also comes with some default keymaps, though not explicitly documented, so I enforce them in my `init.lua`.
+- `nvim-lspconfig` to easily configure my use of LSPs with Neovim, which also comes with some default keymaps, though not explicitly documented, so I enforce them in my `init.lua`; and
+
+- `quarto-nvim` to use Quarto with Neovim.
 
