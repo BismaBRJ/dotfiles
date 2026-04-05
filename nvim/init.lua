@@ -7,6 +7,7 @@ require("config.lazy")
 vim.lsp.enable({
     "pyright", -- Python LSP: Pyright
     "hls", -- Haskell LSP: Haskell Language Server (HLS)
+    "r_language_server", -- LSP for R: languageserver
     -- trailing comma, tee-hee
 })
 
