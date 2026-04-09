@@ -5,9 +5,14 @@ require("config.lazy")
 -- initialization for plugin: nvim-lspconfig
 -- any overrides are under after/lsp/
 vim.lsp.enable({
+    "julials", -- Julia LSP: LanguageServer.jl
+    -- source: https://github.com/julia-vscode/LanguageServer.jl/wiki/Vim-and-Neovim#vimlspconfig---new-api-in-neovim-011
+    
     "pyright", -- Python LSP: Pyright
-    "hls", -- Haskell LSP: Haskell Language Server (HLS)
+
     "r_language_server", -- LSP for R: languageserver
+
+    "hls", -- Haskell LSP: Haskell Language Server (HLS)
     -- trailing comma, tee-hee
 })
 
