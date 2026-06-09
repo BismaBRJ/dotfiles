@@ -13,6 +13,8 @@ vim.lsp.enable({
     "r_language_server", -- LSP for R: languageserver
 
     "hls", -- Haskell LSP: Haskell Language Server (HLS)
+
+    "clangd", -- C/C++ LSP
     -- trailing comma, tee-hee
 })
 
