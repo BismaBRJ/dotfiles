@@ -17,3 +17,5 @@ export PATH
 
 # <<< juliaup initialize <<<
 
+
+. "$HOME/.local/bin/env"
