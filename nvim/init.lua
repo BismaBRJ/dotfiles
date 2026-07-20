@@ -14,8 +14,6 @@ vim.lsp.enable({
 
     "hls", -- Haskell LSP: Haskell Language Server (HLS)
 
-    "jdtls", -- Java LSP: Eclipse JDT LS (eclipse.jdt.ls)
-
     "clangd", -- C/C++ LSP
     -- trailing comma, tee-hee
 })
