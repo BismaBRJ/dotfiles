@@ -10,7 +10,9 @@ If it may interest you: so far, I intend to use neovim with somewhat-minimal con
 
 - VimTeX to use LaTeX, which apparently comes with some default keybindings;
 
-- `nvim-lspconfig` to easily configure my use of LSPs with Neovim, which also comes with some default keymaps, though not explicitly documented, so I enforce them in my `init.lua`; and
+- `nvim-lspconfig` to easily configure my use of LSPs with Neovim, which also comes with some default keymaps, though not explicitly documented, so I enforce them in my `init.lua`;
+
+- `nvim-jdtls` for use of the Eclipse JDT Language Server for Java; and
 
 - `lean.nvim` for use of the Lean proof assistant.
 
