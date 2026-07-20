@@ -1,4 +1,4 @@
--- adapted from: https://github.com/Julian/lean.nvim
+-- adapted from: https://github.com/Julian/lean.nvim (README.md)
 return {
     'Julian/lean.nvim',
     event = { 'BufReadPre *.lean', 'BufNewFile *.lean' },
@@ -12,6 +12,7 @@ return {
         -- 'tomtom/tcomment_vim',           -- for commenting
     },
 
+    -- I forgot how or why I rewrote this part but iirc it was necessary
     init = function()
         vim.g.lean_config = {
             mappings = true,
