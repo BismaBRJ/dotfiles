@@ -10,13 +10,19 @@ local the_root_dir = vim.fs.root(0, {'gradlew', '.git', 'mvnw'})
 
 -- If you started neovim within `~/dev/xy/project-1`,
 -- and if the_root_dir is empty (no Gradle nor Git nor Maven in the project),
--- this would resolve to `project-1`
-local project_name = vim.fn.fnamemodify(
-  the_root_dir or vim.fn.getcwd(), -- fallbacks are so idiomatic in Lua!
-  ':p:h:t'
-)
+-- project_name would resolve to `project-1`
+local known_root_dir = the_root_dir or vim.fn.getcwd()
+                        -- fallbacks are so idiomatic in Lua!
+-- local project_name = vim.fn.fnamemodify(known_root_dir, ':p:h:t')
+local project_hash = vim.fn.sha256(known_root_dir)
 local vimpath = vim.fn.stdpath("data") -- for me it's ~/.local/share/nvim
-local workspace_dir = vimpath .. "/my-cache/jdtls-data/" .. project_name
+local workspace_dir = vimpath .. "/my-cache/jdtls-data/" .. project_hash
+-- initially used project_name directly in place of project_hash,
+-- but what if two projects coincidentally have the same name?
+-- those two projects would try to use the same folder...
+-- though on the other hand any change in known_root_dir would change the hash,
+-- I prefer the "risk" of re-indexing over the risk of a corrupt cache
+-- (assuming any two hashes won't collide, well, hopefully not, lol)
 
 -- See `:help vim.lsp.start` for an overview of the supported `config` options.
 local config = {
