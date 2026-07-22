@@ -15,8 +15,8 @@ local known_root_dir = the_root_dir or vim.fn.getcwd()
                         -- fallbacks are so idiomatic in Lua!
 -- local project_name = vim.fn.fnamemodify(known_root_dir, ':p:h:t')
 local project_hash = vim.fn.sha256(known_root_dir)
-local vimpath = vim.fn.stdpath("data") -- for me it's ~/.local/share/nvim
-local workspace_dir = vimpath .. "/my-caches/jdtls-data/" .. project_hash
+local vimpath = vim.fn.stdpath("cache") -- for me it's ~/.cache/nvim
+local workspace_dir = vimpath .. "/my-caches/nvim-jdtls/" .. project_hash
 -- initially used project_name directly in place of project_hash,
 -- but what if two projects coincidentally have the same name?
 -- those two projects would try to use the same folder...
