@@ -1,7 +1,2 @@
 # macOS stuff
 .DS_Store
-
-# all neovim cache should go under here
-# (it's on me to configure plugins accordingly)
-/nvim/my-caches/
-
