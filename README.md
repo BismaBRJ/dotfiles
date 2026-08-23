@@ -128,7 +128,7 @@ In normal mode, you can type `:Ex` to enter netrw, the default file explorer for
 
 - Moving/copying: first do `mt` (mark target) when inside the destination folder, then go to the desired files and do `mf` (mark file) at each of them to select, and then either `mm` or `mc` to move or copy (respectively) all selected files
 
-### Specific to VimTeX
+### Some VimTeX controls
 
 Apparently there is some sort of "leader key", which for me is set to `\` (backslash) by default. When opening a `.tex` file, in normal mode:
 
@@ -140,7 +140,7 @@ In normal mode, `[[` and `]]` jump to the previous and next section respectively
 
 In insert mode, when in the middle of an environment, `]]` (yes, actually typing it in the text) auto-closes the environment, whatever it may be, even if it's really just unclosed brackets 
 
-### LSP controls
+### Some LSP controls
 
 For programming languages with an LSP set up,
 
