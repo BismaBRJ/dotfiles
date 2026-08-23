@@ -144,6 +144,6 @@ In insert mode, when in the middle of an environment, `]]` (yes, actually typing
 
 For programming languages with an LSP set up,
 
-- Ctrl+`w`+`d` (yes Ctrl even in macOS) to view a warning or error message on the current line, if it has any (you would know if it does, it would be indicated by a color). Then Ctrl+`w`+`d` again to move your cursor into it to read it better and navigate etc., and in this case, `:q` to return the cursor back to your code
+- Ctrl+`w`+`d` (yes Ctrl even in macOS) to view a warning or error message on the current line, if it has any (you would know if it does, it would be indicated by a color). Un-view by moving away (say with `h`/`j`/`k`/`l`)... or if you want, Ctrl+`w`+`d` again to move your cursor into it to read it better and navigate etc. and, in that case, `:q` to return the cursor back to your code
 
 - `]d` and `[d` to jump to the next and previous warning/error message respectively
