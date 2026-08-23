@@ -3,5 +3,5 @@
   "lean.nvim": { "branch": "main", "commit": "3d8027a96ada0fe43bdd01403e1bd4a09d175448" },
   "nvim-jdtls": { "branch": "master", "commit": "6e9d953f0b82bccdb834cfde0e893f3119c22592" },
   "nvim-lspconfig": { "branch": "master", "commit": "221c43884319e791519f0d6c94a7f2fbcd653278" },
-  "vimtex": { "branch": "master", "commit": "2f279775e5b73743973bf2b013791f8f1673d5ac" }
+  "vimtex": { "branch": "master", "commit": "c1b96604d9a387cde5a98bec8f6687ae3078b571" }
 }
