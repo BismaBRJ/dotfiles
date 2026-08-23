@@ -31,16 +31,16 @@ As a "modal" text editor, Neovim has "modes" such as the default "Normal mode" f
 Navigate with arrow keys or `h`, `j`, `k`, `l`:
 
 ```
- j
-h  l
   k
+h  l
+ j
 ```
 
 Press and hold to let it scroll (repeating itself until you lift the finger)
 
-Positive integer before any action to specifically repeat it that many times. So for example `3h` goes three characters to the left, `5j` goes five lines up (hence people usually enable relative line numbering in Neovim, to never actually have to calculate distances). I usually go `9j` or `9k`, possibly several times, to scroll up or down quickly.
+Positive integer before any action to specifically repeat it that many times. So for example `3h` goes three characters to the left, `5j` goes five lines down (hence people usually enable relative line numbering in Neovim, to never actually have to calculate distances). I usually go `9j` or `9k`, possibly several times, to scroll down or up quickly.
 
-If word wrap is enabled, `gj` and `gk` goes up and down, respectively, on the "lines" as you see on screen rather than the actual line-breaked lines in the text file
+If word wrap is enabled, `gj` and `gk` goes down and up, respectively, on the "lines" as you see on screen rather than the actual line-breaked lines in the text file
 
 Especially (but not compulsorily) with absolute line numbering enabled, you can jump to a specific line number by
 
@@ -70,7 +70,7 @@ Search:
 
 Editing:
 
-- `dd` to delete a line. `dj` and `dk` to delete a line as well as the line above or below it respectively; really
+- `dd` to delete a line. `dj` and `dk` to delete a line as well as the line below or above it respectively; really
 
     `d` + (positive integer) + `j`/`k`
 
