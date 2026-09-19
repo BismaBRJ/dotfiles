@@ -18,12 +18,18 @@ vim.lsp.enable({
     -- trailing comma, tee-hee
 })
 
--- nvim-lspconfig keybindings below are from:
+-- nvim-lspconfig keybindings below are adapted from:
 -- https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/
 
 -- These keymaps are the defaults in Neovim v0.10
-vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
-vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+-- vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
+vim.keymap.set('n', '[d',
+    '<cmd>lua vim.diagnostic.jump({ count = -1, float = true })<cr>'
+)
+-- vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+vim.keymap.set('n', ']d',
+    '<cmd>lua vim.diagnostic.jump({ count = 1, float = true })<cr>'
+)
 vim.keymap.set('n', '<C-w>d', '<cmd>lua vim.diagnostic.open_float()<cr>')
 vim.keymap.set('n', '<C-w><C-d>', '<cmd>lua vim.diagnostic.open_float()<cr>')
 
