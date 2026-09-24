@@ -128,13 +128,33 @@ In normal mode, you can type `:Ex` to enter netrw, the default file explorer for
 
 - Moving/copying: first do `mt` (mark target) when inside the destination folder, then go to the desired files and do `mf` (mark file) at each of them to select, and then either `mm` or `mc` to move or copy (respectively) all selected files
 
+### "Split screen", multiple buffers, and multiple files
+
+If you ever want to edit one file while looking at, or even copying from, another file, or even while just peeking from another section within the same file if it's so large, well, you can.
+
+- `:vsplit` does a vertical split, displaying a new window or "buffer" to the right of the one you're currently editing.
+
+- `:hsplit`, which I personally don't use that often if at all, does a horizontal split, displaying a new buffer below the one you're currently editing.
+
+- To move your "cursor" to another buffer, use Ctrl+`w`+`h`/`j`/`k`/`l`, that last part depending on the relative position of this other buffer you want to move to.
+
+    For example, if you just used `:vsplit` and want to move to the buffer on the right, use Ctrl+`w`+`l`, because `l` alone usually moves one character to the *right*; then you can return to the left with Ctrl+`w`+`h`.
+
+You can then use netrw within that other buffer if you want to display another file instead, and voila. Each buffer works like usual: normal mode, insert mode, visual mode... you can even yank a few lines within one buffer, move to another, and then paste seamlessly. It just works.
+
+Just use `:wq` once you're done with a buffer to close it (or `:q` if you didn't edit anything there anyway).
+
 ### Some VimTeX controls
 
 Apparently there is some sort of "leader key", which for me is set to `\` (backslash) by default. When opening a `.tex` file, in normal mode:
 
-- `\lv` to jump to that part in the PDF viewer
+- `\lv` jumps to that part in the PDF viewer
 
-- `\ll` to start/stop compiling as well as turn on/off (respectively) auto-compilation on save
+- `\ll` starts/stops compiling as well as turn on/off (respectively) auto-compilation on save.
+
+    After compilation, VimTeX opens a buffer of warnings (or errors, if any) below the one you're currently editing (it's like they did `:hsplit` for you).
+
+- `\le` toggles the display of this error panel.
 
 In normal mode, `[[` and `]]` jump to the previous and next section respectively (as in, the `\begin{section}` lines)
 
