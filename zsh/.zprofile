@@ -28,3 +28,17 @@ eval "$(/usr/local/bin/brew shellenv)"
 PATH="${HOME}/.local/share/jdtls/jdt-language-server-1.60.0-202606262232/bin:${PATH}"
 export PATH
 
+
+##
+# Your previous /Users/bisma/.zprofile file was backed up as /Users/bisma/.zprofile.macports-saved_2026-10-15_at_21:17:13
+##
+
+# MacPorts Installer addition on 2026-10-15_at_21:17:13: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# yeah apparently MacPorts added that on their own upon installation
+# anyway, just downloaded some Android platform-tools like adb, hopefully this works
+export PATH="$PATH:/Applications/platform-tools"
+
