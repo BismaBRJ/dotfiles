@@ -42,3 +42,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # anyway, just downloaded some Android platform-tools like adb, hopefully this works
 export PATH="$PATH:/Applications/platform-tools"
 
+# source: https://zed.dev/docs/languages/go
+# "If gopls is not found you will likely need to add ..."
+export PATH="$PATH:$HOME/go/bin"
