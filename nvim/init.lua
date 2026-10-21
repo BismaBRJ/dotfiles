@@ -15,6 +15,8 @@ vim.lsp.enable({
     "hls", -- Haskell LSP: Haskell Language Server (HLS)
 
     "clangd", -- C/C++ LSP
+
+    "gopls", -- Golang LSP
     -- trailing comma, tee-hee
 })
 
