@@ -1,25 +1,14 @@
 # Lean's elan I think. Prepending huh?
 export PATH="$HOME/.elan/bin:$PATH"
 
-# Setting PATH for Python 3.12
-# The original version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
-export PATH
-# funny to see prepending... maybe I should also prepend below
-# perhaps to override whatever system defaults there are, if any?
-# AHH no wonder the python command now just refers to whatever I installed
-
 # for metamath-knife, Mario Carneiro's
-PATH="/Applications/metamath-knife/target/release:${PATH}"
-export PATH
+export PATH="/Applications/metamath-knife/target/release:${PATH}"
 
 # for metamath-exe, the C program
-PATH="/Applications/metamath-exe/src:${PATH}"
-export PATH
+export PATH="/Applications/metamath-exe/src:${PATH}"
 
 # for neovim, lol
-PATH="/Applications/nvim-macos-x86_64/bin:${PATH}"
-export PATH
+export PATH="/Applications/nvim-macos-x86_64/bin:${PATH}"
 
 # after installing Homebrew
 eval "$(/usr/local/bin/brew shellenv)"
@@ -40,7 +29,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # yeah apparently MacPorts added that on their own upon installation
 # anyway, just downloaded some Android platform-tools like adb, hopefully this works
-export PATH="$PATH:/Applications/platform-tools"
+export PATH="/Applications/platform-tools:$PATH"
 
 # source: https://zed.dev/docs/languages/go
 # "If gopls is not found you will likely need to add ..."
