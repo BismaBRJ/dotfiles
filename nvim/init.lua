@@ -17,6 +17,8 @@ vim.lsp.enable({
     "clangd", -- C/C++ LSP
 
     "gopls", -- Golang LSP
+
+    "tsc", -- TypeScript LSP
     -- trailing comma, tee-hee
 })
 
